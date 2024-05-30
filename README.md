@@ -32,6 +32,7 @@ To get started with this repository, follow these steps:
 
     ```bash
     cd frontend-libraries
+    cd experiment/tool folder
     ```
 
 3. **Install dependencies:**
