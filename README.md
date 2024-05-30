@@ -48,24 +48,25 @@ To get started with this repository, follow these steps:
 
 5. **Explore the experiments:**
 
-    Open your browser and navigate to `http://localhost:3000` to see the experiments.
+    Open your browser and navigate to `http://localhost:3000` to see the experiments in action.
 
 ## Project Structure
 
 The repository is organized as follows:
 
+```
 frontend-libraries/
-```│
+│
 ├── experiments/
-│   ├── experiment-1/
-│   ├── experiment-2/
-│   ├── experiment-3/
-│   └── ...
+│ ├── experiment-1/
+│ ├── experiment-2/
+│ ├── experiment-3/
+│ └── ...
 │
 ├── tools/
-│   ├── tool-1/
-│   ├── tool-2/
-│   └── ...
+│ ├── tool-1/
+│ ├── tool-2/
+│ └── ...
 │
 ├── README.md
 ├── package.json
@@ -75,6 +76,53 @@ frontend-libraries/
 
 - **experiments/**: Contains all the design and engineering experiments.
 - **tools/**: Contains various frontend tools and utilities developed during our experiments.
+
+### Using Workspaces
+
+To ensure each experiment and tool has its own `node_modules` and does not affect others, we use npm workspaces. Here's how to set it up:
+
+1. **Initialize the mono repo:**
+
+    ```bash
+    npm init -y
+    ```
+
+2. **Configure `package.json` to use workspaces:**
+
+    Update your `package.json` to include a `workspaces` property:
+
+    ```json
+    {
+      "name": "frontend-libraries",
+      "version": "1.0.0",
+      "private": true,
+      "workspaces": [
+        "experiments/*",
+        "tools/*"
+      ]
+    }
+    ```
+
+3. **Set up each experiment/tool with its own `package.json`:**
+
+    For example, in `experiments/experiment-1`:
+
+    ```bash
+    mkdir experiments/experiment-1
+    cd experiments/experiment-1
+    npm init -y
+    ```
+
+    Repeat this for each experiment and tool.
+
+4. **Install dependencies for each experiment/tool:**
+
+    Navigate to each experiment/tool directory and install the necessary dependencies. For example:
+
+    ```bash
+    cd experiments/experiment-1
+    npm install some-dependency
+    ```
 
 ## Contributing
 
@@ -100,4 +148,3 @@ Happy experimenting! If you have any questions or need assistance, contact the r
 ---
 
 _This README is generated and maintained by Renaissance Innovation Labs._
-
