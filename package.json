@@ -1,0 +1,12 @@
+{
+	"name": "frontend-libraries",
+	"version": "1.0.0",
+	"description": "Welcome to the Playground repository! This is a space dedicated to housing all our front-end experiments. Whether it's a design or engineering experiment, you'll find it here. This repository is managed by Renaissance Innovation Labs and is meant for internal exploration, testing, and showcasing of innovative front-end techniques and tools.",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "shammahk1@gmail.com, https://github.com/shammahk",
+	"license": "ISC",
+	"homepage": "https://github.com/Renaissance-Innovation-Labs/frontend-libraries/README.md"
+}
