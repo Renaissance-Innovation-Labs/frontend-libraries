@@ -55,7 +55,7 @@ To get started with this repository, follow these steps:
 The repository is organized as follows:
 
 frontend-libraries/
-│
+```│
 ├── experiments/
 │   ├── experiment-1/
 │   ├── experiment-2/
@@ -70,6 +70,7 @@ frontend-libraries/
 ├── README.md
 ├── package.json
 └── ...
+```
 
 
 - **experiments/**: Contains all the design and engineering experiments.
