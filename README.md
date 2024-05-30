@@ -34,22 +34,9 @@ To get started with this repository, follow these steps:
     cd frontend-libraries
     cd experiment/tool folder
     ```
-
-3. **Install dependencies:**
-
-    ```bash
-    npm install
-    ```
-
-4. **Run the development server:**
-
-    ```bash
-    npm start
-    ```
-
-5. **Explore the experiments:**
-
-    Open your browser and navigate to `http://localhost:3000` to see the experiments in action.
+3. **Set up development environment**
+   
+   Use the directions in the README.md for the project to set up the development environment.
 
 ## Project Structure
 
