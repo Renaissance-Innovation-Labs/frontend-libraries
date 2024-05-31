@@ -1,6 +1,6 @@
-# Playground
+# Frontend Playground
 
-Welcome to the Playground repository! This is a space dedicated to housing all our front-end experiments. Whether it's a design or engineering experiment, you'll find it here. This repository is managed by Renaissance Innovation Labs and is meant for internal exploration, testing, and showcasing of innovative front-end techniques and tools.
+Welcome to the Frontend Playground repository! This is a space dedicated to housing all our front-end experiments. Whether it's a design or engineering experiment, you'll find it here. This repository is managed by Renaissance Innovation Labs and is meant for internal exploration, testing, and showcasing of innovative front-end techniques and tools.
 
 ## Repository Link
 
