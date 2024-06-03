@@ -5,6 +5,10 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
+	"workspaces": [
+	    "experiments/*",
+	    "tools/*"
+	],
 	"keywords": [],
 	"author": "shammahk1@gmail.com, https://github.com/shammahk",
 	"license": "ISC",
