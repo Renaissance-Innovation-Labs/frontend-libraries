@@ -69,7 +69,7 @@ frontend-libraries/
 
 To ensure each experiment and tool has its own `node_modules` and does not affect others, we use npm workspaces. Here's how to set it up:
 
-NOTE: If you are not a maintainer, skip step 3.
+NOTE: If you are not a maintainer, skip steps 1 and 2.
 
 1. **Initialize the mono repo:**
 
