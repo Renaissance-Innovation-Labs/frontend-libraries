@@ -7,7 +7,7 @@ const Index = () => {
       <h1 className="text-2xl lg:text-4xl font-bold text-center mb-8">
         Responsive Animated Gallery Slider
       </h1>
-      <GallerySlider array={slideArr} />
+      <GallerySlider array={slideArr} timeSec={7000} />
     </div>
   );
 };
