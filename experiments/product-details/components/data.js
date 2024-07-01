@@ -13,9 +13,9 @@ export const details = {
       src: 'https://images.unsplash.com/photo-1600185365778-7875a359b924',
     },
 
-    {
-      id: 4,
-      src: 'https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb',
-    },
+    // {
+    //   id: 4,
+    //   src: 'https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb',
+    // },
   ],
 };
