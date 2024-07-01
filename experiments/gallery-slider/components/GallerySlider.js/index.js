@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 // slide image component
-const GallerySlider = ({ array }) => {
+const GallerySlider = ({ array, timeSec = 4000 }) => {
   const [activeImg, setActiveImg] = useState(1);
 
   useEffect(() => {
@@ -12,7 +12,7 @@ const GallerySlider = ({ array }) => {
     }
     const interval = setInterval(() => {
       setActiveImg(activeImg + 1);
-    }, 8000);
+    }, timeSec);
     return () => clearInterval(interval);
   }, [activeImg, array?.length]);
 
