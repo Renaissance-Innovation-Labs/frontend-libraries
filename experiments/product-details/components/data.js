@@ -15,7 +15,7 @@ export const details = {
 
     {
       id: 4,
-      src: 'https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb',
+      src: 'https://images.unsplash.com/photo-1587563871167-1ee9c731aefb',
     },
   ],
 };
