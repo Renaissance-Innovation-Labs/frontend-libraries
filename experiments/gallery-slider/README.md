@@ -4,6 +4,8 @@ A responisve animated gallery slider created with NextJs v14 and tailwind css.
 
 ## IMAGES/VIDEO
 
+VIEW ON CODEPEN: [https://codepen.io/Developer-Renaissance/pen/gONOXVQ]
+
 ### HOW TO USE
 
 1. Install Nextjs and tailwind in your project, `[NextJs Doc]` `(https://nextjs.org/docs/getting-started/installation)`
