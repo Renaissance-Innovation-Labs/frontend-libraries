@@ -4,12 +4,12 @@ import Image from 'next/image';
 
 import { details } from './data';
 
-const Button = ({ link, href, ctaText, action }) => {
-  if (link) {
+const Button = ({ href, ctaText, action }) => {
+  if (href) {
     return (
       <Link href={href}>
         <button
-          className="bg-black w-fit text-white rounded-md text-xs py-2 px-8"
+          className="bg-black w-fit text-white rounded-md text-xs py-3 px-10"
           onClick={action}
         >
           {ctaText}
@@ -19,7 +19,7 @@ const Button = ({ link, href, ctaText, action }) => {
   } else {
     return (
       <button
-        className="bg-black w-fit text-white rounded-md text-xs py-2 px-8"
+        className="bg-black w-fit text-white rounded-md text-xs py-3 px-10"
         onClick={action}
       >
         {ctaText}
@@ -28,7 +28,7 @@ const Button = ({ link, href, ctaText, action }) => {
   }
 };
 
-export const ProductDetails = ({ link, href, ctaText, action, changeView }) => {
+export const ProductDetails = ({ link, href, ctaText, action, layout }) => {
   const [active, setActive] = useState(details?.imgs[0]);
 
   const newH = (1 / details?.imgs?.length) * 100 + '%';
@@ -38,12 +38,12 @@ export const ProductDetails = ({ link, href, ctaText, action, changeView }) => {
       <div className=" grid grid-cols-1 lg:grid-cols-12 gap-3 h-full w-full mt-8">
         <div
           className={`lg:col-span-8  flex flex-col-reverse gap-2 ${
-            changeView && 'lg:flex-row'
+            layout === 'vertical' && 'lg:flex-row'
           } `}
         >
           <div
             className={` w-full flex justify-between gap-1 ${
-              changeView && 'lg:w-1/4 lg:flex-col'
+              layout === 'vertical' && 'lg:w-1/4 lg:flex-col'
             } `}
           >
             {details?.imgs?.map((item) => (
@@ -53,7 +53,7 @@ export const ProductDetails = ({ link, href, ctaText, action, changeView }) => {
                 className={`${
                   active?.src === item.src && 'border-2 border-black'
                 } cursor-pointer relative w-full bg-gray-200 rounded-lg overflow-hidden ${
-                  changeView ? `h-20 lg:h-[${newH}]` : 'h-20'
+                  layout === 'vertical' ? `h-20 lg:h-[${newH}]` : 'h-20'
                 }  
                 
                   `}
@@ -70,7 +70,7 @@ export const ProductDetails = ({ link, href, ctaText, action, changeView }) => {
 
           <div className="bg-gray-200 w-full  lg:flex-1 h-64 lg:h-auto  rounded-lg relative overflow-hidden">
             <Image
-              alt="Mountains"
+              alt="product"
               src={active?.src}
               quality={100}
               fill

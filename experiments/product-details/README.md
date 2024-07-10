@@ -4,8 +4,8 @@ A product details view component which has two types of image layout created wit
 
 ## IMAGES/VIDEO
 
-![View 1](public/images/View-1.png)
-![View 2](public/images/View-2.png)
+![Vertical Layout](public/images/View-1.png)
+![Horizontal Layout](public/images/View-2.png)
 
 VIEW ON CODEPEN : [https://codepen.io/Developer-Renaissance/pen/qBzBwgM]
 
@@ -36,11 +36,11 @@ VIEW ON CODEPEN : [https://codepen.io/Developer-Renaissance/pen/qBzBwgM]
 
 (II) **link(compulsory)** The CTA can be either a button or a link. If the link prop is provided, you are to add the href={} prop and if the link prop is not provided, it would default to a button which would require you to provide the action prop that is added to the button's onClick.
 
-(III) **ctaText(optional)** Whether it is a button or a link, you are to provide a ctaText which is a string.
+(III) **ctaText(compulosry)** Whether it is a button or a link, you are to provide a ctaText which is a string.
 
-(IV) **changeView(optional)** This props give you access to the two layout changes of the product images. If true, the images will be laid as this:
-![changeView is true](public/images/View-1.png)
-![changeView is false or absent](public/images/View-2.png)
+(IV) **layout(compulosry)** This props give you access to the two layout changes of the product images. Values are 'vertical' or 'horizontal':
+![Vertical Layout](public/images/View-1.png)
+![Horizontal Layout](public/images/View-2.png)
 
 It is true by default.
 

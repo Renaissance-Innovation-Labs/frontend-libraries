@@ -9,7 +9,7 @@ const Index = () => {
         Product Details
       </h1>
 
-      <ProductDetails link href="/" ctaText="Order" changeView />
+      <ProductDetails layout="vertical" href="/cart" ctaText="Order" />
     </div>
   );
 };
