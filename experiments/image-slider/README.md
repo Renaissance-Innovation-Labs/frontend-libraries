@@ -13,7 +13,9 @@
 Welcome to the Image Slider Website! This website provides a seamless and elegant way to display a collection of images in a slider format. Ideal for portfolios, galleries, and showcases, this image slider is designed to be responsive and user-friendly.
 
 ---
+
 ![alt text](image/Screenshot_8.png)
+
 ---
 
 ## Features
